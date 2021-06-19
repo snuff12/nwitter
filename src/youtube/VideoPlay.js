@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './youtube.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCaretDown} from "@fortawesome/free-solid-svg-icons";
+import { faCaretUp} from "@fortawesome/free-solid-svg-icons";
 
 const VideoPlay = ({video}) => {
     const [show, setShow] = useState(true);
@@ -34,7 +37,7 @@ const VideoPlay = ({video}) => {
     const showDiv =         
         <div className="playingDiv">
             <div className="pRemove">
-                <div className="pButton" onClick={remove}> &lt;&lt; </div>
+                <div className="pButton" onClick={remove}> Player 닫기 &lt;&lt;  </div>
             </div>
             <div className='pVideo'>
                 <iframe src={videoSrc} allowFullScreen title='Video player'/>
@@ -47,7 +50,7 @@ const VideoPlay = ({video}) => {
     const hideDiv =
         <div className="hideDiv" onClick={remove}>
             <div className="pRemove">
-                <div className="pButton"> &gt;&gt; </div>
+                <div className="pButton"> Player 열기 &gt;&gt; </div>
             </div>
         </div>
     

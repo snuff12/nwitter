@@ -20,7 +20,6 @@ const VideoList = ({videos , selectVideo}) => {
         }
     })
 
-
     const remove = () => {
         if(show) {
             setShow(false)
@@ -34,13 +33,13 @@ const VideoList = ({videos , selectVideo}) => {
     });
 
     const showList = 
-    <div className='listDiv'>
+    <div className={videos.length === 0 ? 'none' : 'listDiv'}>
         <div>{videos.length !== 0 ? <div className='hideMenu1' onClick={remove}><FontAwesomeIcon className="downIcon1" icon={faCaretUp}/> youtube 닫기 </div>: null}</div>
         {renderedVideos}
     </div>
 
     const hideList = 
-    <div className='listDiv' onClick={remove}>
+    <div onClick={remove}>
         <div className='hideDiv2'>{videos.length !== 0 ? <div className='hideMenu2'><FontAwesomeIcon className="downIcon2" icon={faCaretDown}/> <div>youtube 열기</div> </div>: null}</div>
     </div>
 

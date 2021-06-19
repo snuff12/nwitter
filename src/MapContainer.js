@@ -81,6 +81,11 @@ const MapContainer = ({ searchPlace, searchSubmit }) => {
                         infowindow.close();
                     });
 
+                    kakao.maps.event.addListener(marker, 'click', function() {
+                        console.log(title);
+                        searchSubmit(title);
+                    });
+
                     itemEl.onmouseover =  function () {
                         displayInfowindow(marker, title);
                     };

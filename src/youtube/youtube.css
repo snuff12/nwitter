@@ -2,9 +2,9 @@
     z-index: 10000;
     background-color: white;
     position: absolute;
-    right: 30px;
+    right: 0px;
     width: 490px;
-    /* box-shadow: -4px 3px 5px 0px rgb(0 0 0 / 27%); */
+    box-shadow: -4px 3px 5px 0px rgb(0 0 0 / 27%);
     padding: 14px;
     border-radius: 9px;
 }
@@ -50,10 +50,11 @@
 }
 
 .playingDiv {
+    background-color: white;
     z-index: 100000;
     position: fixed;
-    left: 30px;
-    bottom: 33px;
+    right: 535px;
+    bottom: 28px;
     width: 300px;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%);
     border-radius: 5px;
@@ -62,10 +63,10 @@
 .hideDiv {
     z-index: 10000;
     background-color: white;
-    height: 94px;
     position: fixed;
-    bottom: 30px;
-    width: 34px;
+    bottom: 26px;
+    width: 300px;
+    right: 535px;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%);
     border-radius: 5px;
     cursor: pointer;
@@ -77,15 +78,14 @@
 }
 
 .pRemove {
-    background-color: white;
-    height: 27px;
+    height: 33px;
 }
 
 .pButton {
     position: absolute;
     right: 9px;
-    font-size: 13px;
-    top: 5px;
+    font-size: 12px;
+    top: 9px;
     font-weight: 600;
     cursor: pointer;
 }
@@ -109,7 +109,6 @@
     padding-right: 13px;
     padding-left: 13px;
     padding-bottom: 16px;
-    background-color: white;
 }
 
 .pHeader {
@@ -125,6 +124,7 @@
 .hideDiv2 {
     background-color: white;
     z-index: 10000;
+    top: 50px;
     right: 0;
     height: 30px;
     position: fixed;
@@ -154,4 +154,8 @@
 .downIcon2 {
     margin-top: 3px;
     margin-right: 7px;
+}
+
+.none {
+    display: none;
 }

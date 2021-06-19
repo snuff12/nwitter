@@ -4,6 +4,8 @@ import youtube from './youtube/Api';
 import VideoList from './youtube/VideoList';
 import VideoPlay from './youtube/VideoPlay';
 import './youtube/youtube.css';
+import MapContainer from './MapContainer';
+import SearchPlace from './SearchPlace';
 
 class App extends React.Component {
     state = {
@@ -32,9 +34,9 @@ class App extends React.Component {
     render() {
         return (
             <div className='ui container' style={{marginTop: '1em'}}>
-                <Search searchSubmit={this.searchSubmit}/>
                 <VideoList selectVideo={this.selectVideo} videos={this.state.videos}/>
                 <VideoPlay video={this.state.selectedVideo} />
+                <SearchPlace searchSubmit={this.searchSubmit}/>
             </div>
         )
     }

@@ -46,10 +46,6 @@ const VideoList = ({videos , selectVideo}) => {
 
     return (
         <div>{show ? <div>{showList}</div> : <div>{hideList}</div>}</div>
-        // <div className='listDiv'>
-        //     <div>{videos.length !== 0 ? <FontAwesomeIcon icon={faCaretUp} onClick={remove}/> : null}</div>
-        //     {renderedVideos}
-        // </div>
     )
     
 };

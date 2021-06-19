@@ -1,4 +1,6 @@
 .listDiv {
+    z-index: 10000;
+    background-color: white;
     position: absolute;
     right: 30px;
     width: 490px;
@@ -48,6 +50,7 @@
 }
 
 .playingDiv {
+    z-index: 100000;
     position: fixed;
     left: 30px;
     bottom: 33px;
@@ -57,6 +60,8 @@
 }
 
 .hideDiv {
+    z-index: 10000;
+    background-color: white;
     height: 94px;
     position: fixed;
     bottom: 30px;
@@ -72,6 +77,7 @@
 }
 
 .pRemove {
+    background-color: white;
     height: 27px;
 }
 
@@ -89,6 +95,9 @@
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%);
 }
 
+.pVideo {
+    background-color: white;
+}
 .pVideo > iframe {
     width: 300px;
     height: 180px;
@@ -114,6 +123,8 @@
 }
 
 .hideDiv2 {
+    background-color: white;
+    z-index: 10000;
     right: 0;
     height: 30px;
     position: fixed;
